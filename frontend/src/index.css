@@ -129,10 +129,10 @@ header a {
 .signlogo{
   width: 40px;
   height: 40px;
-  margin-right:200rem;
+  margin-right:1rem;
   margin-left: 1rem;
   mix-blend-mode: multiply;
-  position: absolute;
+  position: relative;
 }
 a.brand {
   color: #000000;
@@ -579,7 +579,7 @@ img.large {
 @media only screen and (max-width: 600px) {
 
   header{
-  height: 250%;
+  height: 290%;
   }
   .headerhome{
     margin-top: 6rem;
@@ -651,19 +651,25 @@ img.large {
     margin-left: 10rem;
     padding-bottom: 1rem;
 }
+.rowhead{
+  margin-top: 1.5rem;
+}
 .nilgiris img{
   width: 40rem;
   margin-left: 1rem;
 }
 .btntop{
   margin-left: 15rem;
+ 
 }
 .search button{
   margin-right: 30rem;
+  margin-bottom: 5rem;
 }
 
 .search input{
   margin-left:.8rem;
+  margin-bottom: 5rem;
 }
 .dropdown{
   font-size: 2.2vh;

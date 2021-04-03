@@ -247,19 +247,12 @@ function App() {
             <li>Terms and conditions</li>
             <li>Tourism</li>
             </ul>
-            <ul>
+            <ul className="follow">
               <h2>Follow us on:</h2>
               <li>Facebook</li>
               <li>Instagram</li>
               <li>YouTube</li>
               <li>Twitter</li>
-           </ul>
-           <ul>
-           <li><h2>Our Partners</h2></li>
-           <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-           <li>Saepe consectetur omnis nemo aliquid labore, aut nam?</li>
-           <li>Dolorem rem facilis minus sit eos veniam?</li>
-           <li> Expedita, cumque pariatur architecto quasi deserunt mollitia.</li>
            </ul>
            <ul>
            <li><img class="mylogo" src="./images/logo.png" alt="vk"/></li>

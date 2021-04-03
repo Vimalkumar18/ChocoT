@@ -13,6 +13,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+mongodb+srv://VimalKumar:Mydatabase@cluster0.jwsdp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/chocoT', {
   useNewUrlParser: true,
   useUnifiedTopology: true,

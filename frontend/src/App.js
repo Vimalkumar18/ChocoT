@@ -62,15 +62,8 @@ function App() {
               <i className="fa fa-bars"></i>
             </button>
           </div>
-          <div>
-            <Route
-              render={({ history }) => (
-                <SearchBox history={history}></SearchBox>
-              )}
-            ></Route>
-          </div>
           <Link className="brand" to="/">
-              CHOCO'T
+              CHOCO'T- Get lorem ipsum
             </Link>
           <div>
           <Link to="/cart">
@@ -103,6 +96,7 @@ function App() {
             ) : (
               <Link to="/signin"><img class="signlogo" src="./images/signin.png" alt="sign"/></Link>
             )}
+            
             {userInfo && userInfo.isSeller && (
               <div className="dropdown">
                 <Link to="#admin">
@@ -136,6 +130,13 @@ function App() {
                 </ul>
               </div>
             )}
+          </div>
+          <div>
+            <Route
+              render={({ history }) => (
+                <SearchBox history={history}></SearchBox>
+              )}
+            ></Route>
           </div>
         </header>
         <aside className={sidebarIsOpen ? 'open' : ''}>

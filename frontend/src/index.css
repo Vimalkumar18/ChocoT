@@ -33,7 +33,7 @@ body {
 header {
   grid-area: header;
   background: radial-gradient(wheat,rgb(245, 194, 99));
-  height: 6.5rem;
+  height: 7rem;
 }
 main {
   grid-area: main;
@@ -56,7 +56,7 @@ footer {
 /* Common */
 h1 {
   font-size: 1.8rem;
-  padding: 1rem 0;
+  padding-top: 10rem;
 }
 h2 {
   font-size: 1.6rem;
@@ -100,7 +100,11 @@ button:hover {
   border: 0.1rem #404040 solid;
 }
 button.primary {
-  background-color: #f0c040;
+  background-color: #17a0aa;
+  color: #000000;
+}
+button.primary-2 {
+  background-color: #17a0aa;
 }
 button.block {
   width: 100%;
@@ -111,7 +115,6 @@ button.small {
 /* Header */
 header a {
   color: #ffffff;
-  padding: 1rem;
 }
 .cartlogo{
   width: 50px;
@@ -124,16 +127,19 @@ header a {
   mix-blend-mode: multiply;
 }
 .signlogo{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  margin-right:200rem;
+  margin-left: 1rem;
   mix-blend-mode: multiply;
-  position: relative;
+  position: absolute;
 }
 a.brand {
   color: #000000;
   font-size: 3rem;
   font-weight: bold;
   font-family: cursive;
+  margin-right: 0.2rem;
 }
 .badge {
   background-color: #f02020;
@@ -310,6 +316,7 @@ img.large {
 .dropdown a{
   color: black;
   font-weight: bold;
+  padding: 1.5rem;
 }
 .dropdown a:hover{
   color: white;
@@ -368,11 +375,13 @@ img.large {
   border-radius: 0 0.5rem 0.5rem 0;
   border-right: none;
   margin-right: 0.5rem;
+  padding-left: 2rem;
+  position: relative;
 }
 .search input {
   border-radius: 0.5rem 0 0 0.5rem;
   border-right: none;
-  margin-left: 0.5rem;
+  margin-left: 25rem;
 }
 .active {
   font-weight: bold;
@@ -557,7 +566,7 @@ img.large {
   color: #fff;
   padding: 8px 30px;
   margin-top: 5rem;
-  margin-left: 25rem;
+  margin-left: 20rem;
   border-radius: 30px;
   -webkit-transition: background 0.5s;
   transition: background 0.5s;
@@ -567,12 +576,10 @@ img.large {
   background: teal;
 }
 /*media screen*/
-
-
-
 @media only screen and (max-width: 600px) {
+
   header{
-  height: 300%;
+  height: 250%;
   }
   .headerhome{
     margin-top: 6rem;
@@ -599,18 +606,22 @@ img.large {
     padding-top: .2rem;
   }
   .signlogo{
-    width:20px;
-    height: 20px;
+    width:40px;
+    height: 40px;
+    margin-left: 51.6rem;
+    margin-top: 0.1rem;
   }
   .cartlogo{
-    width:20px;
-    height: 20px;
+    width:40px;
+    height: 40px;
+    margin-right: 5rem;
   }
   .follow{
     margin-right: 3rem;
   }
   a.brand{
-    margin-left: .5rem;
+    margin-left: 0.1rem;
+    font-size: 3.5vh;
   }
   .nav{
     width:10px;
@@ -629,6 +640,12 @@ img.large {
     margin-bottom: 2rem;
     width: 25rem;
   }
+  .titlehead{
+    font-size: 5vh;
+  }
+  .title{
+    font-size: 5vh;
+  }
   .row center{
     margin-right: 0.1rem;
     margin-left: 10rem;
@@ -640,5 +657,36 @@ img.large {
 }
 .btntop{
   margin-left: 15rem;
+}
+.search button{
+  margin-right: 30rem;
+}
+
+.search input{
+  margin-left:.8rem;
+}
+.dropdown{
+  font-size: 2.2vh;
+  margin-left: 10rem;
+}
+.dropdown a:hover{
+  color: white;
+}
+button.primary-2{
+  margin-top: 8rem;
+  margin-right: 3rem;
+}
+.table {
+  display:contents;
+  margin-left: 5rem;
+}
+.table td,
+.table th {
+  font-size: 75%;
+  padding: 0.5rem;
+}
+button.small {
+  font-size: 1rem;
+  padding: .5rem;
 }
 }

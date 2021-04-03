@@ -32,7 +32,7 @@ body {
 }
 header {
   grid-area: header;
-  background: radial-gradient(wheat,rgb(245, 194, 99));
+  background: radial-gradient(#fafafa,#888888);
   height: 7rem;
 }
 main {
@@ -40,8 +40,8 @@ main {
 }
 footer {
   grid-area: footer;
-  background: radial-gradient(wheat,rgb(245, 194, 99));
-  color: #000000;
+  background-color: black;
+  color: white;
   height:max-content ;
   padding: 2rem;
 }
@@ -100,7 +100,7 @@ button:hover {
   border: 0.1rem #404040 solid;
 }
 button.primary {
-  background-color: #17a0aa;
+  background-color: #ff5a31;
   color: #000000;
 }
 button.primary-2 {
@@ -124,7 +124,7 @@ header a {
 .mylogo{
   width: 50px;
   height: 50px;
-  mix-blend-mode: multiply;
+  mix-blend-mode:lighten;
 }
 .signlogo{
   width: 40px;
@@ -248,7 +248,7 @@ img.large {
 }
 .card-body {
   padding: .5rem;
-  background: radial-gradient(rgb(245, 245, 243),rgb(212, 171, 94));
+  background: radial-gradient(#fafafa,#888888);
 }
 .card-body > * {
   margin-bottom: 0.2rem;
@@ -258,7 +258,7 @@ img.large {
   font-size: 2rem;
 }
 .pricesorter{
-  background-color: rgb(245, 190, 87);
+  background-color: #888888;
 }
 /* Rating */
 .rating span {
@@ -472,7 +472,7 @@ img.large {
 }
 .container-head {
   flex-grow: 100;
-  background: radial-gradient(rgb(255, 255, 255),rgb(248, 199, 109));
+  background: radial-gradient(#fafafa,#888888);
   padding-bottom: 5rem;
   
 }
@@ -505,7 +505,8 @@ img.large {
 /*Testimonials*/
 .testimonials {
   padding: 5rem;
-  background: radial-gradient(#c58c22, white);
+  margin-top: 12rem;
+  background: radial-gradient(#fafafa,#888888);
 }
 
 .testimonials .col-1 {
@@ -514,7 +515,7 @@ img.large {
   padding-bottom: 1rem;
   -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-  background-color: wheat;
+background: radial-gradient(#ccbbbb,#ffffff);
   cursor: pointer;
   -webkit-transform: 0.5s;
           transform: 0.5s;
@@ -537,7 +538,8 @@ img.large {
   color: blueviolet;
 }
 .fa.fa-search {
-  color: rgb(255, 0, 0);
+  color: black;
+  margin-right: 12px;
 }
 .title {
   text-align: center;
@@ -576,6 +578,134 @@ img.large {
   background: teal;
 }
 /*media screen*/
+@media only screen and (max-width: 800px) {
+
+  header{
+  height: 290%;
+  }
+  .headerhome{
+    margin-top: 6rem;
+  }
+  .html{
+    overflow: none;
+  }
+  img{
+    width: 5rem;
+    align-items: center;
+  }
+  .h1, .h2, .h3, .p{
+  width: 10%;
+  }
+  .rightlinks{
+    margin-left: 1rem;
+  }
+  .rowcenter{
+    text-align: center;
+    margin-left: 14rem;
+  }
+  .mylogo{
+    margin-left: 21rem;
+    padding-top: .2rem;
+  }
+  
+  .follow{
+    margin-right: 2rem;
+  }
+  a.brand{
+    margin-right: 6rem;
+    font-size: 3.5vh;
+    
+  }
+  .nav{
+    width:10px;
+    height: 10px;
+  }
+  .testimonials {
+    padding: .5rem;
+  }
+  .testimonials .col-1 {
+    max-width: 50rem;
+    margin-left: 12rem;
+  }
+  .card{
+    margin-left: 1.6rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    width: 25rem;
+  }
+  .titlehead{
+    font-size: 5vh;
+  }
+  .title{
+    font-size: 5vh;
+  }
+  .row center{
+    margin-right: 0.1rem;
+    margin-left: 10rem;
+    padding-bottom: 1rem;
+}
+.rowhead{
+  margin-top: 1.5rem;
+}
+.nilgiris img{
+  width: 40rem;
+  margin-left: 1rem;
+}
+.btntop{
+  margin-left: 15rem;
+ 
+}
+.search button{
+  margin-right: 3rem;
+  margin-bottom: 2.9rem;
+}
+
+.search input{
+  margin-left:1rem;
+  margin-bottom: 3rem;
+}
+.signlogo{
+  width:40px;
+  height: 40px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.cartlogo{
+  width:40px;
+  height: 40px;
+  margin-bottom: 2rem;
+}
+.dropdown{
+  font-size: 2.2vh;
+  margin-left: 10rem;
+}
+.dropdown a:hover{
+  color: white;
+}
+button.primary-2{
+  margin-top: 8rem;
+  margin-right: 3rem;
+}
+.table {
+  display:contents;
+  margin-left: 5rem;
+}
+.table td,
+.table th {
+  font-size: 75%;
+  padding: 0.5rem;
+}
+button.small {
+  font-size: 1rem;
+  padding: .5rem;
+}
+select{
+  margin-top: 6rem;
+}
+.resultsearch{
+  margin-top: 9rem;
+}
+}
 @media only screen and (max-width: 600px) {
 
   header{
@@ -605,23 +735,14 @@ img.large {
     margin-left: 25rem;
     padding-top: .2rem;
   }
-  .signlogo{
-    width:40px;
-    height: 40px;
-    margin-left: 51.6rem;
-    margin-top: 0.1rem;
-  }
-  .cartlogo{
-    width:40px;
-    height: 40px;
-    margin-right: 5rem;
-  }
+  
   .follow{
-    margin-right: 3rem;
+    margin-right: 2rem;
   }
   a.brand{
-    margin-left: 0.1rem;
+    margin-right: 10.5rem;
     font-size: 3.5vh;
+    
   }
   .nav{
     width:10px;
@@ -663,13 +784,24 @@ img.large {
  
 }
 .search button{
-  margin-right: 30rem;
-  margin-bottom: 5rem;
+  margin-right: 3rem;
+  margin-bottom: 2.9rem;
 }
 
 .search input{
-  margin-left:.8rem;
-  margin-bottom: 5rem;
+  margin-left:1rem;
+  margin-bottom: 3rem;
+}
+.signlogo{
+  width:40px;
+  height: 40px;
+  position: relative;
+  margin-bottom: 2.8rem;
+}
+.cartlogo{
+  width:40px;
+  height: 40px;
+  margin-bottom: 2.8rem;
 }
 .dropdown{
   font-size: 2.2vh;
@@ -694,5 +826,139 @@ button.primary-2{
 button.small {
   font-size: 1rem;
   padding: .5rem;
+}
+select{
+  margin-top: 6rem;
+}
+.resultsearch{
+  margin-top: 9rem;
+}
+}
+@media only screen and (max-width: 400px) {
+
+  header{
+  height: 290%;
+  }
+  .headerhome{
+    margin-top: 6rem;
+  }
+  .html{
+    overflow: none;
+  }
+  img{
+    width: 5rem;
+    align-items: center;
+  }
+  .h1, .h2, .h3, .p{
+  width: 10%;
+  }
+  .rightlinks{
+    margin-left: 1rem;
+  }
+  .rowcenter{
+    text-align: center;
+    margin-left: 8rem;
+  }
+  .mylogo{
+    margin-left: 15rem;
+    padding-top: .2rem;
+  }
+  
+  .follow{
+    margin-right: 2rem;
+  }
+  a.brand{
+    margin-right: 6.5rem;
+    font-size: 3.5vh;
+    
+  }
+  .nav{
+    width:10px;
+    height: 10px;
+  }
+  .testimonials {
+    padding: .5rem;
+  }
+  .testimonials .col-1 {
+    max-width: 45rem;
+    margin: 2.5rem;
+  }
+  .card{
+    margin-left: 1.6rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    max-width: 18rem;
+  }
+  .titlehead{
+    font-size: 5vh;
+  }
+  .title{
+    font-size: 5vh;
+  }
+  .row center{
+    margin-right: 0.1rem;
+    margin-left: 10rem;
+    padding-bottom: 1rem;
+}
+.rowhead{
+  margin-top: 1.5rem;
+}
+.nilgiris img{
+  width: 40rem;
+  margin-left: 1rem;
+}
+.btntop{
+  margin-left: 15rem;
+ 
+}
+.search button{
+  margin-right: 3rem;
+  margin-bottom: 2.9rem;
+}
+
+.search input{
+  margin-left:1rem;
+  margin-bottom: 3rem;
+}
+.signlogo{
+  width:40px;
+  height: 40px;
+  position: relative;
+  margin-bottom: 2.8rem;
+}
+.cartlogo{
+  width:40px;
+  height: 40px;
+  margin-bottom: 2.8rem;
+}
+.dropdown{
+  font-size: 2.2vh;
+  margin-left: 10rem;
+}
+.dropdown a:hover{
+  color: white;
+}
+button.primary-2{
+  margin-top: 8rem;
+  margin-right: 3rem;
+}
+.table {
+  display:contents;
+  margin-left: 5rem;
+}
+.table td,
+.table th {
+  font-size: 75%;
+  padding: 0.5rem;
+}
+button.small {
+  font-size: 1rem;
+  padding: .5rem;
+}
+select{
+  margin-top: 6rem;
+}
+.resultsearch{
+  margin-top: 9rem;
 }
 }

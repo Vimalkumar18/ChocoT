@@ -66,13 +66,20 @@ function App() {
               CHOCO'T- Get lorem ipsum
             </Link>
           <div>
+          <div>
+            <Route
+              render={({ history }) => (
+                <SearchBox history={history}></SearchBox>
+              )}
+            ></Route>
+          </div>
+          </div>
           <Link to="/cart">
               <img class="cartlogo" src="./images/cart.png" alt="cart"/>
               {cartItems.length > 0 && (
                 <span className="badge">{cartItems.length}</span>
               )}
             </Link>
-          </div>
           <div>
             {userInfo ? (
               <div className="dropdown">
@@ -130,13 +137,6 @@ function App() {
                 </ul>
               </div>
             )}
-          </div>
-          <div>
-            <Route
-              render={({ history }) => (
-                <SearchBox history={history}></SearchBox>
-              )}
-            ></Route>
           </div>
         </header>
         <aside className={sidebarIsOpen ? 'open' : ''}>

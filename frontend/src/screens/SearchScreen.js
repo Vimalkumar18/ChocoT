@@ -60,7 +60,7 @@ export default function SearchScreen(props) {
         ) : error ? (
           <MessageBox variant="danger">{error}</MessageBox>
         ) : (
-          <div>{products.length} Results</div>
+          <div className="resultsearch">{products.length} Results</div>
         )}
         <div className="sorter">
           Sort by{' '}
